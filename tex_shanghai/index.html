@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			*{
+		    border: 0;
+		    padding: 0;
+			margin: 0;
+			}
+			body{
+				background-color: antiquewhite;
+			}
+			#nut1{
+				color: red;
+				width: 100px;
+				height: 50px;
+				background-color: #FFC0CB;
+			}
+			#nut2{
+				color: red;
+				width: 100px;
+				height: 50px;
+				background-color: burlywood;
+			}
+			#hh{
+				padding: 20px 20px 0 0;
+			}
+			#lh{
+				padding: 40px 20px 0 0;
+			}
+			.xlh{
+				float: left;
+			}
+			.in{
+				width: auto;
+				height: 20px;
+				border-radius: 4px;
+				
+			}
+			#but{
+				float: left;
+				margin: 20px 0px 30px 0;
+				padding: 0px 0px 0 0;
+				/* position: absolute;
+				left: 350px;
+				top: 50px; */
+				width: 50px;
+				height: 50px;
+				border-radius: 10px 10px 10px 10px;
+				-moz-border-radius: 10px 10px 10px 10px;
+				-webkit-border-radius: 10px 10px 10px 10px;
+				border: 0px solid #000000;
+			}
+			#pho{
+				float: left;
+				padding: 0 200px;
+			}
+			@font-face{
+				font-family:"lg";
+				src:url("lg.ttf")
+			}
+			.pp{
+				text-align: center;
+				line-height: 50px;
+				font-size: 30px;
+				font-family:"lg";
+				src:url("lg.ttf")
+			}
+			#p1{
+				padding: 10px 0 0 0;
+			}
+		</style>
+		<script type="text/javascript">
+			function displayDate(){
+				b=document.getElementById("in1").value;
+				document.getElementById("p1").innerHTML=b; 
+				
+				a=document.getElementById("in2").value;
+				document.getElementById("p2").innerHTML=a; 
+			}
+		</script>
+	</head>
+	<body>
+		<div id="bd">
+			<div id="lh">
+				<div class="xlh">
+					楼号
+				</div>
+				<input class="in" type="text" id="in1" value="42#" />
+			</div>
+			<div id="hh">
+				<div class="xlh">
+					户号
+				</div>
+				<input class="in" type="text" id="in2" value="502" />
+			</div>
+			<div id="but">
+				<button type="button" id="but" class="in" onclick="displayDate()">立即生成</button>
+			</div>
+			<div id="pho">
+				<div id="bk">
+					<div id="nut1">
+						<p class="pp" id="p1">42#</p>
+					</div>
+					<div id="nut2">
+						<p class="pp" id="p2">101</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
